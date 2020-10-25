@@ -1,0 +1,28 @@
+<!-- start module content -->
+<ol>
+<li> <b>Note</b>: This is your first module. Open the module plus the template file to see how everything works!
+<li> To 'catch' a smarty variable just use &lt;{$example}&gt;, this will result in <br><b> <{$example}> </b><br> For the language you must put them into smarty var by doing to same but please add lang to the name to avoid conflicts and to keep it all clear.
+<li> DO NOT use any echo in your php files, this will result in getting all that text above the xoops text, and that isn't exactly what you want huh?
+<li> To have more templates, define them in xoops_version.php and update module.
+<li> You can include other templates files (wich is really needed in complex modules), do it with &lt;{include file="db:sample_secondfile"}&gt;, wich would result in this case: <b><{include file="db:sample_secondfile.html"}></b>
+<li> You can use too if's in template files, here a example plus the result:
+<table><tr><td valign="top">
+		<strong>CODE:</strong><br>
+		<br>&lt;{if $sample}&gt; 
+		<br>$sample is defined
+		<br>&lt;{else}&gt; 
+		<br>$sample is not defined
+		<br>&lt;{/if}&gt; 
+	</td><td valign="top">
+		<strong>RESULT:</strong><br>	
+		<br><{if $sample}> 
+		$sample is defined
+		<{else}> 
+		$sample is not defined
+		<{/if}> 
+	</td></tr></table>
+<li> For any other information about xoops and/or smarty, please use <a href="http://wiki.xoops.org/" target="_blank">Wiki</a>.
+<br><br>
+<li>You are dutch, you need help or, you wanne help on xoops? Goto <a href="http://www.jan304.org" target="_blank">jan304.org</a> or <a href="http://xoops.opencms.nl" target="_blank">xoops.opencms.nl</a>
+</ol>
+<!-- end module content -->
